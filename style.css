@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #70c6c7;
+    background-color: #B9B9B9;
 }
 
 .resume-contents {
@@ -16,19 +16,22 @@ body {
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    border-radius: 0px 60px 0px 0px;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0, 1);
 }
 
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #00204A;
+    background-color: #000000;
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #4B6982;
+    background-color: #28161C;
     border-radius: 0px 60px 0px 0px;
+    color: #B9B9B9;
 }
 
 .left-section-contents{
@@ -41,7 +44,7 @@ body {
     margin-top: 20px;
     align-items: center;
     width: 100%;
-    border-bottom: 2px solid #1B2631;
+    border-bottom: 2px solid #353535;
 }
 
 
@@ -50,10 +53,11 @@ body {
     height: 300px;
     border-radius: 300px;
     scale: 0.8;
+    box-shadow: 0px 0px 50px rgb(0, 170, 169, 0.5) ;
 }
 
 .name {
-    color: #D6DBDF;
+    color: #B9B9B9;
     font-size: 30px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -63,7 +67,7 @@ body {
 }
 
 .profession {
-    color: #FDB44B;
+    color: #00AAA9;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -74,7 +78,7 @@ body {
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-    color: #FDB44B;
+    color: #00AAA9;
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -144,7 +148,7 @@ body {
 }
 
 .right-title {
-    color: #70C6C7;
+    color: #B9B9B9;
     font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -153,6 +157,9 @@ body {
     padding: 2rem 0;
     position: relative;
     margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    gap: 25px;
 }
 
 .gap {
@@ -162,7 +169,10 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2rem;
-    color: #F1F8FD;
+    color: #B9B9B9;
+    margin-right: 25px;
+    text-align: justify;
+    text-transform: none;
 }
 
 .experience-contents,
@@ -171,7 +181,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
-    color: #F1F8FD;
+    color: #B9B9B9;
+    margin-right: 25px;
+    text-align: justify;
 }
 
 .exp-company-name,
@@ -181,9 +193,10 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FDB44B;
+    color: #00AAA9;
     padding-bottom: .4rem;
     margin-left: 20px;
+    text-align: left;
 }
 
 .exp-time-period,
@@ -202,7 +215,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #FDB44B;
+    color: #00AAA9;
     padding-bottom: .4rem;
     margin-left: 50px;
 }
@@ -234,6 +247,7 @@ body {
     
     .right-section {
         grid-column: span 4;
+        border-radius: 0px 0px 0px 0px;
     }
     
 }
@@ -241,6 +255,10 @@ body {
 @media screen and (max-width:1200px) {
     .resume-contents {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .right-section {
+        border-radius: 0px 0px 0px 0px;
     }
 }
 
